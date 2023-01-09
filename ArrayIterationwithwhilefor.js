@@ -30,4 +30,12 @@ function arrayWhile(array){
     }      
  return result
  }
+
+ function sumStartAt(array,index){
+    var result=0;
+    for (var x=index;x<array.length;x++){
+        result+=array[x]
+    }
+        return result
+}
  
