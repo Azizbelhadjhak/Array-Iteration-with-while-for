@@ -39,3 +39,53 @@ function arrayWhile(array){
         return result
 }
  
+
+function min(array){
+    var x=array[0];
+    for (var i=0;i<array.length;i++){
+        if (array[i]< x){
+            return array[i]
+        }
+        if (array[i]> x){
+            return x
+        }
+    }
+}
+
+function max(array){
+    var x=array[array.length-1];
+    for (var i=0;i<array.length;i++){
+        if (array[i]>x){
+            return array[i]
+        }
+        if (array[i]<x){
+            return x
+        }
+    }
+}
+
+
+function shortestString(array){
+    var x=array[0].length;
+    for (var i=0;i<array.length;i++){
+        if (array[i].length <x){
+            return array[i].length
+        }
+    if (array[i].length >x){
+        return x
+    }
+    }
+}
+
+
+function longestString(array){
+    var x=array[array.length-1];
+    for (var i=0;i<array.length;i++){
+        if (array[i].length > x.length){
+            return array[i].length
+        }
+    if (array[i].length < x.length){
+        return x.length
+    }
+    }
+}
